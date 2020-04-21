@@ -1,0 +1,16 @@
+body{
+    padding: 50px;
+    background-color: chartreuse;
+}
+.box{
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.box img:hover{
+    transform: translate3d(0px,-150px,0px);
+}
+.box img{
+    transition: transform .2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
