@@ -25,7 +25,7 @@
         
         <script>
             var myElement = document.querySelector(".circle");
-            myElement.addEventListener("transitionend", updateCount , false);
+            myElement.addEventListener("transitionstart", updateCount , false);
             function updateCount(e){
                 number+=5;
                 countValue.textContent = number;
@@ -33,6 +33,11 @@
             }
             var number=0;
             var countValue = document.querySelector(".count");
+            myElement.addEventListener("transitionend", downdateCount , false);
+            function downdateCount(e){
+                countValue.textContent = 0;
+            }
+
 
         </script>
     </body>
