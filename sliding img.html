@@ -15,11 +15,25 @@
         <div class="box">
             <img src="https://www.kirupa.com/html5/examples/images/smiley.png" alt="">
         </div>
+        <div class="circle">
+            <h1 class="count">0</h1>
+        </div>
        
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         
-        <script src="" async defer></script>
+        <script>
+            var myElement = document.querySelector(".circle");
+            myElement.addEventListener("transitionend", updateCount , false);
+            function updateCount(e){
+                number+=5;
+                countValue.textContent = number;
+
+            }
+            var number=0;
+            var countValue = document.querySelector(".count");
+
+        </script>
     </body>
 </html>

@@ -13,4 +13,22 @@ body{
 }
 .box img{
     transition: transform .2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}.circle{
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    border: .5px black solid;
+    background-color: chocolate;
+    margin: 50px auto;
+    text-align: center;
+    transition: transform .2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+.circle:hover{
+    transform: scale3d(1.2, 1.2,1.2);
+}
+.count{
+    padding-top: 150px;
+    font-size:auto;
+    font-style: oblique;
+    color: rgba(7, 44, 253, 0.932);
 }
